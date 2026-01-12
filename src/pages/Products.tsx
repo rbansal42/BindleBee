@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Container } from '@/components/layout/Container';
 import { ProductCard } from '@/components/products/ProductCard';
@@ -151,8 +151,8 @@ export function Products() {
                                             <button
                                                 onClick={() => handleCategoryClick(cat.name)}
                                                 className={`text-sm transition-colors duration-300 ${selectedCategory === cat.name && !selectedSubcategory
-                                                        ? 'text-terracotta font-medium'
-                                                        : 'text-charcoal/70 hover:text-charcoal'
+                                                    ? 'text-terracotta font-medium'
+                                                    : 'text-charcoal/70 hover:text-charcoal'
                                                     }`}
                                             >
                                                 {cat.name}
@@ -164,8 +164,8 @@ export function Products() {
                                                             <button
                                                                 onClick={() => handleSubcategoryClick(cat.name, sub)}
                                                                 className={`text-sm transition-colors duration-300 ${selectedSubcategory === sub
-                                                                        ? 'text-terracotta font-medium'
-                                                                        : 'text-charcoal/50 hover:text-charcoal'
+                                                                    ? 'text-terracotta font-medium'
+                                                                    : 'text-charcoal/50 hover:text-charcoal'
                                                                     }`}
                                                             >
                                                                 {sub}

@@ -34,10 +34,6 @@ export const categories = [
     },
 ];
 
-// Generate placeholder images using a consistent pattern
-const generateImage = (id: number, index: number = 1) =>
-    `https://images.unsplash.com/photo-${1555041469 + id * 100 + index}-a586c7bae99f?w=800&h=800&fit=crop`;
-
 export const products: Product[] = [
     // Living Room - Sofas
     {
