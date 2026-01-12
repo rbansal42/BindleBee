@@ -26,7 +26,7 @@ export function Section({ children, className = '', background = 'cream', id }: 
     };
 
     return (
-        <section id={id} className={`py-16 md:py-24 ${bgColors[background]} ${className}`}>
+        <section id={id} className={`py-20 md:py-32 ${bgColors[background]} ${className}`}>
             <Container>{children}</Container>
         </section>
     );

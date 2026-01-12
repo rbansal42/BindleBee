@@ -20,18 +20,18 @@ export function Button({
     type = 'button',
 }: ButtonProps) {
     const baseStyles =
-        'inline-flex items-center justify-center font-medium transition-all duration-300 rounded-lg';
+        'inline-flex items-center justify-center font-medium transition-all duration-300 rounded-full shadow-soft hover:shadow-elevated';
 
     const variants = {
-        primary: 'bg-charcoal text-cream hover:bg-walnut hover:scale-105',
-        secondary: 'bg-terracotta text-cream hover:bg-walnut hover:scale-105',
-        outline: 'bg-transparent border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-cream',
+        primary: 'bg-charcoal text-cream hover:bg-walnut active:scale-[0.98]',
+        secondary: 'bg-terracotta text-cream hover:bg-walnut active:scale-[0.98] hover:shadow-glow',
+        outline: 'bg-transparent border border-charcoal text-charcoal hover:bg-charcoal hover:text-cream active:scale-[0.98]',
     };
 
     const sizes = {
-        sm: 'px-4 py-2 text-sm',
-        md: 'px-6 py-3 text-sm',
-        lg: 'px-8 py-4 text-base',
+        sm: 'px-5 py-2.5 text-sm',
+        md: 'px-7 py-3.5 text-sm tracking-wide',
+        lg: 'px-10 py-4 text-base tracking-wide',
     };
 
     const styles = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
@@ -52,3 +52,4 @@ export function Button({
 }
 
 export default Button;
+

@@ -31,20 +31,20 @@ export function FeaturedCollection() {
             <div ref={sectionRef}>
                 {/* Header */}
                 <div
-                    className={`text-center mb-12 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                    className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                         }`}
                 >
-                    <span className="text-sm text-taupe uppercase tracking-[0.2em]">Curated Selection</span>
-                    <h2 className="font-serif text-3xl md:text-4xl text-walnut mt-3 mb-4">
+                    <span className="text-sm text-taupe uppercase tracking-[0.25em] font-light">Curated Selection</span>
+                    <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-walnut mt-4 mb-5">
                         Featured Collection
                     </h2>
-                    <p className="text-charcoal/70 max-w-xl mx-auto">
+                    <p className="text-charcoal/70 max-w-2xl mx-auto text-lg leading-relaxed">
                         Discover our handpicked selection of furniture pieces that blend timeless design with exceptional craftsmanship.
                     </p>
                 </div>
 
                 {/* Product Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     {featuredProducts.slice(0, 8).map((product, index) => (
                         <div
                             key={product.id}
@@ -59,21 +59,21 @@ export function FeaturedCollection() {
 
                 {/* View All Link */}
                 <div
-                    className={`text-center mt-12 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                    className={`text-center mt-16 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                         }`}
                 >
                     <Link
                         to="/products"
-                        className="inline-flex items-center gap-2 text-walnut hover:text-terracotta font-medium transition-colors duration-300 group"
+                        className="inline-flex items-center gap-3 text-walnut hover:text-terracotta font-medium transition-colors duration-300 group text-lg"
                     >
                         View All Products
                         <svg
-                            className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
+                            className="w-5 h-5 transform group-hover:translate-x-2 transition-transform duration-300"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
                         >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                     </Link>
                 </div>
@@ -83,3 +83,4 @@ export function FeaturedCollection() {
 }
 
 export default FeaturedCollection;
+

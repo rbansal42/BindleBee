@@ -26,13 +26,13 @@ export function About() {
 
     return (
         <Section id="about" background="cream">
-            <div ref={sectionRef} className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div ref={sectionRef} className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 {/* Image */}
                 <div
                     className={`relative transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
                         }`}
                 >
-                    <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
+                    <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated">
                         <img
                             src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&h=1000&fit=crop"
                             alt="Craftsman working on furniture"
@@ -40,9 +40,9 @@ export function About() {
                         />
                     </div>
                     {/* Floating Stats Card */}
-                    <div className="absolute -bottom-6 -right-6 md:bottom-8 md:-right-8 bg-walnut text-cream p-6 rounded-xl shadow-lg">
-                        <p className="text-3xl font-serif">25+</p>
-                        <p className="text-sm text-cream/70">Years of Craftsmanship</p>
+                    <div className="absolute -bottom-8 -right-4 md:bottom-8 md:-right-8 bg-walnut text-cream p-8 rounded-2xl shadow-elevated">
+                        <p className="text-4xl font-serif">25+</p>
+                        <p className="text-sm text-cream/70 mt-1">Years of Craftsmanship</p>
                     </div>
                 </div>
 
@@ -51,11 +51,11 @@ export function About() {
                     className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
                         }`}
                 >
-                    <span className="text-sm text-taupe uppercase tracking-[0.2em]">Our Story</span>
-                    <h2 className="font-serif text-3xl md:text-4xl text-walnut mt-3 mb-6">
+                    <span className="text-sm text-taupe uppercase tracking-[0.25em] font-light">Our Story</span>
+                    <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-walnut mt-4 mb-8">
                         Where Tradition Meets Modern Design
                     </h2>
-                    <div className="space-y-4 text-charcoal/70 leading-relaxed">
+                    <div className="space-y-5 text-charcoal/70 leading-relaxed text-lg">
                         <p>
                             Founded in 1998, BindleBee began as a small workshop with a simple mission: to create furniture that stands the test of time. Every piece tells a story of dedication, skill, and unwavering attention to detail.
                         </p>
@@ -68,22 +68,22 @@ export function About() {
                     </div>
 
                     {/* Values */}
-                    <div className="grid grid-cols-3 gap-6 mt-10">
+                    <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-sand">
                         <div>
-                            <p className="font-serif text-2xl text-walnut">100%</p>
-                            <p className="text-sm text-taupe">Solid Wood</p>
+                            <p className="font-serif text-3xl text-walnut">100%</p>
+                            <p className="text-sm text-taupe mt-1">Solid Wood</p>
                         </div>
                         <div>
-                            <p className="font-serif text-2xl text-walnut">10yr</p>
-                            <p className="text-sm text-taupe">Warranty</p>
+                            <p className="font-serif text-3xl text-walnut">10yr</p>
+                            <p className="text-sm text-taupe mt-1">Warranty</p>
                         </div>
                         <div>
-                            <p className="font-serif text-2xl text-walnut">50k+</p>
-                            <p className="text-sm text-taupe">Happy Homes</p>
+                            <p className="font-serif text-3xl text-walnut">50k+</p>
+                            <p className="text-sm text-taupe mt-1">Happy Homes</p>
                         </div>
                     </div>
 
-                    <Button href="/contact" variant="primary" className="mt-10">
+                    <Button href="/contact" variant="primary" size="lg" className="mt-12">
                         Get in Touch
                     </Button>
                 </div>
@@ -93,3 +93,4 @@ export function About() {
 }
 
 export default About;
+
