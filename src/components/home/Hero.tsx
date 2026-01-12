@@ -25,7 +25,7 @@ export function Hero() {
                     <div className="flex items-center gap-4 mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                         <div className="h-px w-12 bg-gradient-to-r from-transparent to-cream/60" />
                         <span className="text-sm text-cream/90 uppercase tracking-[0.35em] font-light">
-                            Artisan Furniture
+                            BindleBee
                         </span>
                     </div>
 
